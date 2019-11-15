@@ -4,11 +4,12 @@ services:
   app:
     build:
       context: .
+    # maps the ports host:image
     ports:
       - "8000:8000"
+    # maps the directory host:image
     volumes:
       - ./app:/app
-
-# greater than symbol breaks this onto a different line (readability)
+    # gt symbol breaks this onto a different line (readability)
     command: >
       sh -c "python manage.py runserver 0.0.0.0:8000"
