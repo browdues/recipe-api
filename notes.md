@@ -5,6 +5,7 @@
 
 # Construct docker-compose *yml file
 1. Set a context, mapped ports/volumes, created a start command
+
 Ran the following command to *build* the project
 
 ```zsh
