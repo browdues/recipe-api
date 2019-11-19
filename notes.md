@@ -20,7 +20,7 @@ docker-compose run --rm app sh -c "python manage.py test && flake8"
 
 ## Starting the app and then customizing
 
-For the first command to work, settings.py needed to be updated to include the name or our app, 'core' within the INSTALLED_APPS declaration constant
+For the first command to work, settings.py needed to be updated to include the name or our app, 'core' within the INSTALLED_APPS declaration constant. This comand will create the template files for our app.
 
 ```zsh
 docker-compose run --rm app sh -c "python manage.py startapp core"
